@@ -3,6 +3,9 @@
 * Herencia
 
   Para heredar `key: inherit` y para no heredar `key: initial`
+* Width and Height
+
+  solo funciona en elementos de bloque, los elementos en linea no lo reconocen.
   
 * Margin and Padding
 
