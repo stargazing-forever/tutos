@@ -1,6 +1,5 @@
-# FIREBASE
-
 ## FIRESTORE
+[disponible en youtube](https://www.youtube.com/playlist?list=PLCKuOXG0bPi29EkcAuVCln9ISbExcQk66)
 
 Trabaja en base a documentos, un documentos no es mas que un json.
 
