@@ -1,4 +1,5 @@
 # CURSO DE FLEX DE JON MIRCHA
+[link del curso](https://www.youtube.com/playlist?list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys)
 ## MIS NOTAS
 
 1. `display: flex` (default) | `inline-flex`

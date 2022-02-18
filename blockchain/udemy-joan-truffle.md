@@ -1,4 +1,5 @@
 # TRUFFLE BASICS
+[link del curso](https://www.udemy.com/course/tokens-nft-en-ethereum-con-truffle-y-react/)
 
 ## CREANDO UN NUEVO PROYECTO
 

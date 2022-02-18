@@ -1,6 +1,6 @@
 # Eslint y Prettier para React
 
-[Tutorial](https://www.youtube.com/watch?v=L-PzzwHp3WY&t=57s)
+[link del tutorial](https://www.youtube.com/watch?v=L-PzzwHp3WY&t=57s)
 
 ## Eslint
 

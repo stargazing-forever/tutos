@@ -1,5 +1,7 @@
 # curso de dorian
 
+[link del curso](https://www.youtube.com/playlist?list=PLROIqh_5RZeDbvISffzihyxzqJBt_z3-Z)
+
 * Herencia
 
   Para heredar `key: inherit` y para no heredar `key: initial`
