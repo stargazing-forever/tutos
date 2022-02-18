@@ -8,12 +8,13 @@ Trabaja en base a documentos, un documentos no es mas que un json.
 * Colecciones => tablas, documentos => registros.
 * Seleccionar el firestore database.
 
-### Using firestore
+### Using firestore por fernando herrera yt 18/02/22
 
- 1. Configuraciones iniciales
+ 1. Configuraciones iniciales 
 
 * copiar el codigo de conexion con firebase brindado por este. Por ejemplo:
   ```javascript
+  import { initializeApp } from "firebase/app"; 
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
@@ -35,6 +36,30 @@ Trabaja en base a documentos, un documentos no es mas que un json.
 * en tu archivo principal de tu app, `/src/index.js`, importar `import './firebase/config';` para cargar ese archivo dentro del `index.js`.
 
 2. Utilizar firestore
-* dentro del config.js `import 'firebase/firestore'`;
-* exportarlo ya que se utilizara cada vez que se requiera utilizar con la db `export default firebase.firestore()` o
-`export default const db = firebase.firestore()`
+* dentro del config.js `import { getFirestore } 'firebase/firestore'`;
+* exportarlo ya que se utilizara cada vez que se requiera utilizar con la db `export default getFirestore()` o
+`export default const db = getFirestore()`.
+* quedando este ejemplo de la sgte manera.
+```js
+  import firebase from 'firebase/app';
+  import {getFirestore} from 'firebase/firestore'
+  // import { initializeApp } from "firebase/app"; 
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+      apiKey: "AIzaSyDt0pi4YZBtZIvMABdCUqaV3wkO-c_GRRo",
+      authDomain: "fernando-firestore-e28ee.firebaseapp.com",
+      projectId: "fernando-firestore-e28ee",
+      storageBucket: "fernando-firestore-e28ee.appspot.com",
+      messagingSenderId: "330246625533",
+      appId: "1:330246625533:web:73b8350564fc1f2ea58694",
+      measurementId: "G-V2TWNNYG9Y"
+    };
+    
+  // Initialize Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+  console.log('Firebase configurado!');
+
+  export default getFirestore();
+```
