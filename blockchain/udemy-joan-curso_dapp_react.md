@@ -119,3 +119,16 @@
   ```
 
   5. Ejecutar el `truffle` y dentro de app `node OracleService`.
+
+## TOKENS NFT
+### Conceptos 
+* Conocer la diferencia entre algo fungible y no fungible.
+### Propiedades
+ 1. Únicos
+ 2. Rasteables
+ 3. Raros
+ 4. Indivisibles
+ 5. Programables
+ 
+ ### Token ERC-721
+ 
