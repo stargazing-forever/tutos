@@ -120,7 +120,7 @@
 
   5. Ejecutar el `truffle` y dentro de app `node OracleService`.
 
-## TOKENS NFT
+## TOKENS
 ### Conceptos 
 * Conocer la diferencia entre algo fungible y no fungible.
 ### Propiedades
@@ -130,5 +130,13 @@
  4. Indivisibles
  5. Programables
  
- ### Token ERC-721
+ ### Token ERC-721 ej:NFT
+ * ERC-721: token unico en toda su existencia, no fungible, rareza(collecionable).
+ * Para ver cuantoss tokens hay y cuales son esos tokens click [aqui](https://etherscan.io/tokens-nft?p=1)
+ #### Caracteristicas erc-721
+ * Poseen un nombre
+ * simbolo nombre abreviado
+ * balance tokens en la direccion
+ * campo del propietario para transferencias
+ * investigar +
  
