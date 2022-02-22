@@ -2,6 +2,27 @@
 
 [link del curso](https://www.youtube.com/playlist?list=PLROIqh_5RZeDbvISffzihyxzqJBt_z3-Z)
 
+* Malas practicas
+  
+  ```css
+  *{
+    margin: 0;    /* quita formato a todos los elementos de documento */
+    padding: 0;
+  }
+  ```
+  ```css
+  .div{
+    margin-top: 20px;
+    margin: 0 auto;   /* elimina otros margenes verticales asignados anteriormente */
+  ```
+  
+  ```css
+    body{
+      margin: 0;  /*  recomendado*/
+      padding: 0;   /*  no recomendado porque el body no tiene padding */
+    }
+  ```
+
 * Herencia
 
   Para heredar `key: inherit` y para no heredar `key: initial`
