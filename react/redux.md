@@ -1,6 +1,6 @@
 # Redux
 
-* Para el funcionamiento del redux devtools
+* Para el funcionamiento del redux devtools [+info](https://github.com/zalmoxisus/redux-devtools-extension#usage)
 ```js
  const store = createStore(
    reducer, /* preloadedState, */
