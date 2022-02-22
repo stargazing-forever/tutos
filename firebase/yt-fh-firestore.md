@@ -2,6 +2,15 @@
 
 [link del curso](https://www.youtube.com/playlist?list=PLCKuOXG0bPi29EkcAuVCln9ISbExcQk66)
 
+- El curso trabaja con firebase 8
+
+```
+  npm install firebase@8.10.0
+```
+
+- Estudia al comprender los conceptos la version 9
+  [doc](https://firebase.google.com/docs/firestore/quickstart?authuser=1#web-version-8)
+
 Trabaja en base a documentos, un documentos no es mas que un json.
 
 ## Topics
@@ -71,7 +80,7 @@ console.log('Firebase configurado!');
 export default getFirestore();
 ```
 
-o tambien otro ejemplo(cod de otro curso) :
+o tambien otro ejemplo(cod de otro curso funcionando actualmente) :
 
 ```js
 import firebase from 'firebase/app';
