@@ -96,3 +96,10 @@
     2. Elementos posicionados sin z-index declarado o en auto, que es lo mismo.
     3. Elementos no posicionados.
     4. Elementos con z-index negativo.
+  ## Order de propiedades
+  No es estricto, pero la mayoria concuerda en lo sgte donde el 1 y el 2 pueden cambiar de orden.
+   1. Propiedades de posionamiento
+   2. Propiedades de box model
+   3. Propiedades de texto
+   4. Propiedades visuales (colores, border, background..)
+   5. El resto
