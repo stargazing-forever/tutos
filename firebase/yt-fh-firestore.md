@@ -45,42 +45,15 @@ Using firestore por fernando herrera yt 18/02/22
   ```
 
 - pegarlo en tu archivo de configuracion de firebase `src/firebase/config.js`
-- instalar firebase `npm install firebase`
+- instalar firebase `npm install firebase@8.10.0`
 - en tu `config.js` realizar el import `import firebase from 'firebase/app';`
 - en tu archivo principal de tu app, `/src/index.js`, importar `import './firebase/config';` para cargar ese archivo dentro del `index.js`.
 
 ## Firestore
 
-- dentro del config.js `import { getFirestore } 'firebase/firestore'`;
-- exportarlo ya que se utilizara cada vez que se requiera utilizar con la db `export default getFirestore()` o
-  `export default const db = getFirestore()`.
-- quedando este ejemplo de la sgte manera.
-
-```js
-import firebase from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
-// import { initializeApp } from "firebase/app";
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: 'AIzaSyDt0pi4YZBtZIvMABdCUqaV3wkO-c_GRRo',
-  authDomain: 'fernando-firestore-e28ee.firebaseapp.com',
-  projectId: 'fernando-firestore-e28ee',
-  storageBucket: 'fernando-firestore-e28ee.appspot.com',
-  messagingSenderId: '330246625533',
-  appId: '1:330246625533:web:73b8350564fc1f2ea58694',
-  measurementId: 'G-V2TWNNYG9Y',
-};
-
-// Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
-console.log('Firebase configurado!');
-
-export default getFirestore();
-```
-
-o tambien otro ejemplo(cod de otro curso funcionando actualmente) :
+- dentro del config.js `import db 'firebase/firestore'`;
+- exportarlo ya que se utilizara cada vez que se requiera utilizar con la db `export default firebase.firestore()`
+- quedando este ejemplo de la sgte manera. v8
 
 ```js
 import firebase from 'firebase/app';
@@ -97,8 +70,7 @@ const firebaseConfig = {
   measurementId: 'G-TGLZE887GF',
 };
 // Initialize Firebase
-const fireb = firebase.initializeApp(firebaseConfig);
-const store = fireb.firestore();
+const app = firebase.initializeApp(firebaseConfig);
 
-export { store };
+export default firebase.firestore();
 ```
