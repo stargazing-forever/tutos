@@ -16,7 +16,7 @@ Antes de un proceso asincrono, para que muestre en la pantalla mientras dure la 
     }
    });
 ```
-```
+```js
  Swal.fire({
    title: "Uploading...",      
    text: "Please wait...",       
