@@ -6,3 +6,4 @@
   
 3. En postman, petición POST, en body agregar key `file` y configurarlo type file y `subir 
   la imagen como value`, ademas agregar key `upload_preset` y añadir en value `el preset de tu app creado`.
+  ,formData.append('folder', 'journal-app') para carpetas.
