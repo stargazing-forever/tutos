@@ -26,6 +26,21 @@
 ## REGLAS DEL tsconfig.json
 * `"noImplicitAny": true`, por defecto viene activado : no permit dejar anys
 * `    "sourceMap": true,` Create source map files for emitted JavaScript files., para que la linea de depuracion en el navegador referencie al ts no al js.
+* `    "removeComments": true,` :Disable emitting comments. Elimina los comentarios en el js transpilado.
+* Para incluir o excluir carpetas de la transpilacion del tsc --watch, agregar al final del tsconfig.json antes de la ultima llave:
+	```ts
+	{
+		{
+			//las otras configuraciones de tsconfig
+		},
+		"exclude": [
+			"node_modules2"
+		],
+		"include": [
+			"node_module"
+		]
+	} //llave de cierre de todo el archivo
+	```
 
 ## TIPOS DE DATOS
    ### Tuples
