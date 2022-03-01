@@ -14,19 +14,45 @@
 
 * modo observador de typescript
 	`tsc --watch` o `tsc -w`
-
-## REGLAS DEL tsconfig.json
-* `"noImplicitAny": true`, por defecto viene activado : no permit dejar anys
-
+ 
 ## CASTING
-```
+```ts
 	let avenger: any = 'Iron man';
 	(avenger as string).charAt(1);
 	(<string>avenger).charAt(1);
 	<string>avenger.charAt(1);
 	
 ```
+## REGLAS DEL tsconfig.json
+* `"noImplicitAny": true`, por defecto viene activado : no permit dejar anys
 
+## TIPOS DE DATOS
+   ### Tuples
+    ```ts
+    	const toy: [string, number] = [ 'Car', 1]
+    	const hero: [string, number, boolean] = ['Dr strange', 46, true];
+    ```
+    
+   ### Enums
+   ```ts
+   enum AudioLevel {
+		min,
+		medium,
+		max,
+	}
+	let currentAudio: AudioLevel = AudioLevel.medium;
+	console.log(currentAudio);  ////=>  1
+	
+	//ó
+	
+	enum AudioLevel {
+		min= 2,
+		medium,
+		max=10,
+	}
+	let currentAudio: AudioLevel = AudioLevel.medium;
+	console.log(currentAudio);  ////=>  3
+   ```
 ## Trucos
 ```js
 	let isBatman: boolean = true;
