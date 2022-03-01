@@ -25,7 +25,7 @@
 ```
 ## REGLAS DEL tsconfig.json
 * `"noImplicitAny": true`, por defecto viene activado : no permit dejar anys
-* `    "sourceMap": true,` Create source map files for emitted JavaScript files., para que la linea de depuracin en el navegador referencie al ta no al js.
+* `    "sourceMap": true,` Create source map files for emitted JavaScript files., para que la linea de depuracion en el navegador referencie al ts no al js.
 
 ## TIPOS DE DATOS
    ### Tuples
