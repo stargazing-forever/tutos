@@ -27,7 +27,16 @@
 * `"noImplicitAny": true`, por defecto viene activado : no permit dejar anys
 * `    "sourceMap": true,` Create source map files for emitted JavaScript files., para que la linea de depuracion en el navegador referencie al ts no al js.
 * `    "removeComments": true,` :Disable emitting comments. Elimina los comentarios en el js transpilado.
-* Para incluir o excluir carpetas de la transpilacion del tsc --watch, agregar al final del tsconfig.json antes de la ultima llave:
+* Usualmente todos nuestros ts se deben transpilar a un solo js para evitart muchos archivos, entonces activamos: 
+	```js
+		"outfile": "./main.js",
+	```
+	y cambiamos en module a amd
+	```
+		"module": "amd"
+	```
+		
+* Para incluir las carpetas que queremos o excluir carpetas de la transpilacion del tsc --watch, agregar al final del tsconfig.json antes de la ultima llave:
 	```ts
 	{
 		{
