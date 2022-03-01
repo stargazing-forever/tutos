@@ -53,6 +53,21 @@
 	let currentAudio: AudioLevel = AudioLevel.medium;
 	console.log(currentAudio);  ////=>  3
    ```
+   ### Never
+   Nuestra funcion no debe terminar exitosamente.
+   ```ts
+   	const error = (): never => {
+		throw new Error(message);
+	}
+   ```
+   ### null and undefined
+   ejemplos no hay mucha que decir solo `null` no es igual a `undefined`
+   ```ts
+	   let isActive: undefined = undefined
+	   let isActive: (bolean | undefined ) = true
+   ```
+   
+   
 ## Trucos
 ```js
 	let isBatman: boolean = true;
