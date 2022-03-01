@@ -18,6 +18,15 @@
 ## REGLAS DEL tsconfig.json
 * `"noImplicitAny": true`, por defecto viene activado : no permit dejar anys
 
+## CASTING
+```
+	let avenger: any = 'Iron man';
+	(avenger as string).charAt(1);
+	(<string>avenger).charAt(1);
+	<string>avenger.charAt(1);
+	
+```
+
 ## Trucos
 ```js
 	let isBatman: boolean = true;
