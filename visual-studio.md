@@ -22,3 +22,4 @@
   * ctrl + shift + u: capitalizar
   * ctrl + shift + l: minusculas
   *  shift + alt + down : copy line down o a group
+  *  ctrl + d : add seleccition to next find match etiqueta de entra a etiqueta de salidas pore ejemplo
