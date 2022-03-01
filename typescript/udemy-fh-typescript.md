@@ -16,4 +16,12 @@
 	`tsc --watch` o `tsc -w`
 
 ## REGLAS DEL tsconfig.json
-* `"noImplicitAny": true`, por defecto viene activado
+* `"noImplicitAny": true`, por defecto viene activado : no permit dejar anys
+
+## Trucos
+```js
+	let isBatman: boolean = true;
+	console.log({ isBatman }) /// => { isBatman: true } 
+```
+	
+	
