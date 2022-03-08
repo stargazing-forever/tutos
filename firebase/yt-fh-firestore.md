@@ -74,3 +74,10 @@ const app = firebase.initializeApp(firebaseConfig);
 
 export default firebase.firestore();
 ```
+
+## Reglas del firestore
+* solo usuario autenticado
+```allow read, write: if request.auth != null;```
+
+* usuairo no autenticado
+```allow read, write: if true;```
