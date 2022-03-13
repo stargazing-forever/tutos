@@ -17,6 +17,6 @@
         rm -rf .git
     ```
 ## Remover el seguimiento de un archivo
-    ```
-        git rm .env --cached
-    ```
+   ```
+      git rm .env --cached
+   ```
