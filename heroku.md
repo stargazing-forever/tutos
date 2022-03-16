@@ -9,5 +9,8 @@
 4. Borrar una variable de entorno `heroku config:unset CONEXION_DB`
 
 ## Ver logs de la app en produccion
-100 indica los ultimos 100
-```heroku logs -n 100```
+  Indica los ultimos 100
+  ```heroku logs -n 100```
+  Ver logs en tiempo real
+  ```heroku logs -n 100 --tail```
+
