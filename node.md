@@ -23,7 +23,7 @@ El metodo toJSON se llama cuando intentamos imprimir el valor de una instancia d
         <body>
     <h1>Google Sign in</h1>
     <div id="g_id_onload"
-        data-client_id="569308467307-up3t8n3b8a3dbugdshtop9iobvfj4p30.apps.googleusercontent.com"
+        data-client_id="YOUR_GOOGLE_CLIENT_ID"
         data-auto_prompt="false"
         data-callback="handleCredentialResponse"
         >
