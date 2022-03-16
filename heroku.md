@@ -11,6 +11,7 @@
 ## Ver logs de la app en produccion
   Indica los ultimos 100
   ```heroku logs -n 100```
+  
   Ver logs en tiempo real
   ```heroku logs -n 100 --tail```
 
