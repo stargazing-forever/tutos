@@ -45,8 +45,10 @@ El metodo toJSON se llama cuando intentamos imprimir el valor de una instancia d
         }
     </script>
 </body>
+   ```
 8. Seguir pasos de "Verify the Google ID token on your server side": Enviar el token al backend con fetch post, y desencriptarlo con 
   ```
-  npm install google-auth-library --save
+    npm install google-auth-library --save
   ```
-      ```
+ 9. Ponder el cod en el helper google-verify. ver cod de fernando.
+     
