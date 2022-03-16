@@ -19,7 +19,7 @@ El metodo toJSON se llama cuando intentamos imprimir el valor de una instancia d
  5. Copiar el boton ejemplo html de "Display the sing in with google button" sin `data-login-uri` y agregar el `data-callback` 
      debajo del `data-client-id` con su script(dentro solo `console.log(response.credential);`).
  6. Con esto nos podemos autenticar con el boton y mostrar el jwt, lo sgte es almacenar el jwt en el backend y crear un usuario basado en ese token.
- 6. Ejmplo codigo resultado button.
+ 7. Ejmplo codigo resultado button.
       ```html
         <body>
     <h1>Google Sign in</h1>
@@ -45,4 +45,8 @@ El metodo toJSON se llama cuando intentamos imprimir el valor de una instancia d
         }
     </script>
 </body>
+8. Enviar el token al backend con fetch post, y desencriptarlo con 
+  ```
+  npm install google-auth-library --save
+  ```
       ```
