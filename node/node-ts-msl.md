@@ -14,7 +14,7 @@
      npm init -y
    ```
 
-3. Crear tu app.ts en la raiz.
+3. Crear tu app.ts en la raiz, importante para ejecutar el tsc mas adelante.
 
 4. Crear el archivo de configuracion de typescript
 
@@ -34,7 +34,7 @@
      "esModuleInterop": true,
    ```
 
-6. Ejecutar el archivo de configuración de typescript para que cree el dist con la configuración establecida anteriormente.
+6. Eliminar la terminal utilizada hasta el momento y crear otro, posterioment ejecutar el archivo de configuración de typescript para que cree el dist con la configuración establecida anteriormente.
 
    ```
      tsc
@@ -46,7 +46,43 @@
      node ./dist/app.js
    ```
 
-\*\*\* Configurando el tslint
+\*\*\* Configurando el eslint
+
+8. Para instalar el esling, para las reglas adicionales de typescript para seguir los estandares de desarrollo
+
+   ```
+     npm i eslint --save-dev
+   ```
+
+9. Antes de crear el archivo de configuración de tslint tenemos que tener instalado typescript de manera local en el proyecto (curso f)
+
+   ```
+     npm i typescript --save-dev
+   ```
+
+10. Crear el archivo de configuración de tslint
+
+    ```
+      npm init @eslint/config
+    ```
+
+11. Establecer la regla que permite utilizar la consola sin errores (opcional)
+
+    ```
+      "rules": {
+        "no-console": false
+      }
+    ```
+
+12. Ejecutar nuevamente en consola `tsc`
+
+13. Comenzar a desarrollar :D
+
+    ```
+      node ./dist/app.js
+    ```
+
+\*\*\* Configurando el tslint(deprecated) old
 
 8. Para instalar el tslint, para las reglas adicionales de typescript para seguir los estandares de desarrollo
 
