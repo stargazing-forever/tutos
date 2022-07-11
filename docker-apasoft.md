@@ -18,3 +18,8 @@ docker images => muestra las imagenes
 docker pull ubuntu => descarga la ultima versin de la imagen indicada
  
 importante: al ejecutar docker run crea un nuevo contenedor de la imagen
+
+*video 40
+docker start container-name => inicia el contenedor indicado
+docker start -i container-name => inicia en modo interactivo el contenedor indicado
+docker stop container-anem => detiene el contenedor indicado
