@@ -23,3 +23,7 @@ importante: al ejecutar docker run crea un nuevo contenedor de la imagen
 docker start container-name => inicia el contenedor indicado
 docker start -i container-name => inicia en modo interactivo el contenedor indicado
 docker stop container-anem => detiene el contenedor indicado
+
+*video 42
+docker run -d nginx => crea el contenedor en modo background, si el contenedor puede trabajar de esta forma
+*dos formas de trabajar con contenedores en modo interactivo y en modo background
