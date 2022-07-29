@@ -48,13 +48,13 @@
 
 \*\*\* Configurando el eslint
 
-8. Para instalar el esling, para las reglas adicionales de typescript para seguir los estandares de desarrollo
+8. Para instalar el eslint, para las reglas adicionales de typescript para seguir los estandares de desarrollo
 
    ```
      npm i eslint --save-dev
    ```
 
-9. Antes de crear el archivo de configuración de tslint tenemos que tener instalado typescript de manera local en el proyecto (curso f)
+9. Antes de crear el archivo de configuración de eslint tenemos que tener instalado typescript de manera local en el proyecto (curso f) como dependencia de desarrollo
 
    ```
      npm i typescript --save-dev
@@ -64,6 +64,7 @@
 
     ```
       npm init @eslint/config
+      yarn create @eslint/config
     ```
 
 11. Establecer la regla que permite utilizar la consola sin errores (opcional)
@@ -71,16 +72,22 @@
     ```
       "rules": {
         "no-console": false
+       ?"no-console": "off"
       }
     ```
-
-12. Ejecutar nuevamente en consola `tsc`
-
-13. Comenzar a desarrollar :D
-
+12. Puedes crear los sgtes script para un inicio más rápido.
     ```
-      node ./dist/app.js
+      "scripts": {
+         "start": "node ./dist/app",
+         "dev": "nodemon ./dist/app"
+      },
     ```
+14. Comenzar a desarrollar :D
+
+     ```
+      yarn dev
+      tsc --watch
+     ```
 
 \*\*\* Configurando el tslint(deprecated) old
 
